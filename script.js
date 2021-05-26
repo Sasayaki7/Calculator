@@ -18,10 +18,10 @@ function setOP(operation){
         return;
     }
     if (query[query.length-1] == '.'){
-        query.pop();
+        query=query.substring(0, query.length-1);
     }
     if ((query[query.length-1] == '+') ||(query[query.length-1] == '-')||(query[query.length-1] == '*')||(query[query.length-1] == '/')){
-        query.pop();
+        query=query.substring(0, query.length-1);
     }
     query+=operation;
     display='';
