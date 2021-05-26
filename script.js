@@ -5,7 +5,7 @@ let display='';
 let disp_html = document.getElementById('display');
 
 function press(number){
-    if (number == '.' && query[query.length-1] == '.'){
+    if (number == '.' && query.length > 0 && query[query.length-1] == '.'){
         return;
     }
     query+=number;
